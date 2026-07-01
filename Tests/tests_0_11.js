@@ -29,6 +29,12 @@ runTest(Stats.qnorm, [0.25, 0, 1], -0.67, 0.01);
 runTest(Stats.qnorm, [0.75, 0, 1], 0.67, 0.01);
 runTest(Stats.qnorm, [0.5, 1, 2], 1, 0.01);
 
+runTest(Stats.dlogis, [0, 0, 1], 0.25, 0.001);
+runTest(Stats.dlogis, [1, 0, 1], 0.1966119, 0.001);
+runTest(Stats.dlogis, [1, 1, 1], 0.25, 0.001);
+runTest(Stats.dlogis, [-1, 1, 2], 0.09830597, 0.001);
+
+
 runTest(Stats.plogis, [0, 0, 1], 0.5, 0.01);
 runTest(Stats.plogis, [-1, 0, 1], 0.2689, 0.01);
 runTest(Stats.plogis, [1, 0, 1], 0.731, 0.01);
